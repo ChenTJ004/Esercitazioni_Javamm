@@ -1,0 +1,19 @@
+boolean anelloBilanciato(int[][] T, int k) {
+	int m = T.length;
+	int centro = m / 2;
+	int somma = T[centro - k][centro - k] + T[centro + k][centro + k];
+	int somma2;
+		// sopra e sotto
+		for(int i = 1; i < m; i++)
+		{
+			if(T[centro - k][centro - k + i] != T[centro + k][centro + k - i])
+			{
+				return false;
+			}
+			if(T[centro - k - i][centro - k] != T[centro + k + i][centro + k])
+			{
+				return false;
+			}
+		}
+	return true;
+}

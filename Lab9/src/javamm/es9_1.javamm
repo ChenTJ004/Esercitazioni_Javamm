@@ -1,0 +1,19 @@
+boolean accoppiata(char[] C, int i) {
+	int middle = C.length / 2;
+	if (middle % 2 == 1) // se la lunghezza dell'array e' dispari allora non ci sara' un accoppiata
+		return false;
+	else {
+		if (i >= middle) { // se riesco ad incrementare i fino ad arrivare alla meta' della lunghezza dell'array restituisco true
+			return true;
+		} else {
+			if (C[i] == C[i + middle]) { // verifico elemento per elemento se le due meta' dell'array corrispondono
+				return accoppiata(C, ++i);
+			} else {
+				return false; // se ci sono due elementi che non corrispondono allora restituisco false
+			}
+		}
+	}
+}
+
+char[] C = {'m', 'a', 't', 'x', 'm', 'a', 't', 'x'};
+System.out.println(accoppiata(C, 0));

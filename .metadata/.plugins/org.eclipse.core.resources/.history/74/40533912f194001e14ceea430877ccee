@@ -1,0 +1,24 @@
+int[] visitaSerpentina(int[][] M) {
+	int m = M.length;
+	int n = M[0].length;
+
+	int[] arrayVisitaSerpentina = new int[n];
+	int riga;
+	for (int i = 0; i < n; i++) {
+		if (i < m) {
+			arrayVisitaSerpentina[i] = M[i][i];
+		} else {
+			riga = Math.abs(m-1 + (m - i));
+			arrayVisitaSerpentina[i] = M[Math.abs(m + (m - i))][i];
+		}
+	}
+
+	return arrayVisitaSerpentina;
+}
+
+
+int[][] M = {{1,2,3,4,5,6,7,8},
+			   	     {9,10,11,12,13,14,15,16},
+				     {17,18,19,20,21,22,23,24},
+				     {25,26,27,28,29,30,31,32}};
+System.out.println(visitaSerpentina(M));

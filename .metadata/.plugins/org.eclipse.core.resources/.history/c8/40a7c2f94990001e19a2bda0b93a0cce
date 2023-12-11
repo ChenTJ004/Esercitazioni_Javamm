@@ -1,0 +1,8 @@
+int numMax(int[] a) {
+	return 0;
+}
+
+int [] occorrenzeCompresso(int [] a) {
+
+	return null;
+}

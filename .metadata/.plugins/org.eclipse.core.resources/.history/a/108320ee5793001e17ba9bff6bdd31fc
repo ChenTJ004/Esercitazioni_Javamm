@@ -1,0 +1,4 @@
+boolean bilanciato (int n) {
+
+	return (false);
+}

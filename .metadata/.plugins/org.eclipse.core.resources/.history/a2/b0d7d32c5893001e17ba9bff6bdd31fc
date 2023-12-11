@@ -1,0 +1,14 @@
+int numCifre(int n) {
+	int i = 0;
+	while (n>=10){
+		n/=10;
+		i++;
+	}
+	return i;
+}
+
+boolean bilanciato(int n) {
+	int k = numCifre(n);
+	
+	return (false);
+}

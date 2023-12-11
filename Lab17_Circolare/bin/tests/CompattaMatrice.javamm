@@ -1,0 +1,28 @@
+
+int[][] compattaMatrice(int[][] A) {
+
+	int[][] matriceCompatta = new int[A.length*A[0].length][3]; 
+	int indice = 0; // scorre le righe della matriceCompatta
+	
+	for (int i = 0; i < A.length; i++) {
+		for (int j = 0; j < A[0].length; j++) {
+			if (A[i][j] != 0) {
+				// Assegno i valori di tutti gli elementi della riga.
+				matriceCompatta[indice++] = {A[i][j], i, j};
+			}
+		}
+	}
+	
+	if(indice == 0) return null; // Come richiesto dal testo dell'esercizio
+	
+	// E' la matrice che sarà restituita dal metodo, che comprende 
+	// solo gli elementi di 'matriceCompatta' diversi da zero.
+	// 'matriceCompatta' contiene esattamente 'indice' elementi diversi da zero.
+	int[][] matriceCompattaOut = new int[indice][3]; 
+	
+	for (int i=0; i<indice; i++)
+		matriceCompattaOut[i]=matriceCompatta[i];
+	
+	return matriceCompattaOut;
+}
+

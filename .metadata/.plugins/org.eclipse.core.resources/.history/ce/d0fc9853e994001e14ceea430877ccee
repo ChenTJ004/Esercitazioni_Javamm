@@ -1,0 +1,29 @@
+int[] rigaTraslata(int[] riga, int numPosizioni){
+	for(int i=0; i<riga.length; i++){
+		
+	}
+	return null;
+}
+
+// CONSEGNA OBBLIGATORIA
+int[][] scorrimentoRighe(int[][] M) {
+	int m = M.length;
+	int n = M[0].length;
+	int index = 0;
+	while(index<n){
+		if(index%2==0){
+			for(int i=0; i<m; i++){
+				
+			}
+		}else{
+			
+		}
+	}
+	return null;
+}
+
+// CONSEGNA EXTRA (FACOLTATIVA)
+int[][] scorrimentoRigheNposizioni (int [][] M, short p) {
+		
+	return null;
+}

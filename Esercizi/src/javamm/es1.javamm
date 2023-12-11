@@ -1,0 +1,15 @@
+int r = 2;
+int c = 2;
+
+boolean libero;
+
+boolean [][] m = new boolean[8][8];
+
+
+if (m[r + 1][c - 1] == false || m[r + 1][c + 1] == false) {
+	libero = true;
+} else {
+	libero = false;
+}
+
+//metodo: insieme di istruzioni che restituisce un valore, o esegue operazione, che puo' essere richiamato piu volte

@@ -1,0 +1,23 @@
+//Stesso identificatore puo apparire in due lati operatore di assegnazione
+void lezione1() {
+	//dichiarazione
+	int contatore;
+	//assegnazione
+	contatore = 5;
+	System.out.println("Contatore: " + contatore);
+	contatore = contatore - 1;
+	System.out.println("Contatore: " + contatore);
+}
+//richiamo della funzione lezione1
+lezione1();
+
+//A differenza di una variabile, il valore di un letterale non cambia
+// Letterali di tipo int(5.0, 5), char('A','B','*'), boolean (true-false), string ("Contatore").
+
+//forme contratte: += *= -= (espressione a destra trattata come singola unita')
+
+/*
+ * double x;
+ * int n = 5;
+ * x=n; --> x contiene 5.0
+ */

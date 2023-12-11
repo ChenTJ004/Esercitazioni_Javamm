@@ -1,0 +1,8 @@
+int cifreDiNumero (int n){
+	int i =0;
+}
+
+boolean bilanciato (int n) {
+	int k = 
+	return (false);
+}

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Spirale.student
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: SpiralPath.student;singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: javamm.runtime,
+ org.junit
+Import-Package: javamm,
+ org.apache.commons.logging,
+ org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

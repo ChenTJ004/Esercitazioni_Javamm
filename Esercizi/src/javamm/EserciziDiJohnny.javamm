@@ -1,0 +1,19 @@
+boolean accoppiata(char[] A, int i) {
+	int mid = A.length / 2; // meta' dell'array
+	if (A.length % 2 == 1) {
+		return false;
+	} else {
+		if (i < mid) {
+			if (A[i] == A[i + mid]) {
+				return accoppiata(A, i + 1);
+			} else {
+				return false;
+			}
+		} else {
+			return true;
+		}
+	}
+}
+
+char[] caratteri = {'m', 'a', 't', 'm', 'a', 't'};
+System.out.println(accoppiata(caratteri, 0));

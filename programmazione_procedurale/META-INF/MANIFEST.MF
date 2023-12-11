@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: programmazione_procedurale
+Bundle-ManifestVersion: 2
+Bundle-Name: programmazione_procedurale
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: programmazione_procedurale; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: javamm.runtime
+Import-Package: org.apache.log4j,
+ org.apache.commons.logging
+Bundle-RequiredExecutionEnvironment: JavaSE-11

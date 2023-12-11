@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: Simulazione_prova_intermedia
+Bundle-ManifestVersion: 2
+Bundle-Name: Simulazione_prova_intermedia
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: Lab9;singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: javamm.runtime
+Import-Package: org.apache.log4j,
+ org.apache.commons.logging
+Bundle-RequiredExecutionEnvironment: JavaSE-11

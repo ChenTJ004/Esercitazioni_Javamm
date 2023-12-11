@@ -1,0 +1,12 @@
+int[] visitaSerpentina(int[][] M) {
+	int m = M.length;
+	int n = M[0].length;
+	
+	int arrayVisitaSerpentina = new int[n];
+	
+	int posizioneAttuale = M[0][0];
+	
+	
+	
+	return null;
+}

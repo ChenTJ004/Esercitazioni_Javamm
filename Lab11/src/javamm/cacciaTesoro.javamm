@@ -1,0 +1,28 @@
+boolean tesoroTrovato(char[][] M, int r, int c, int i) {
+	int m = M.length;
+	int n = M[0].length;
+	// matrice con indici circolari
+	int rigaP = (r + m - 1) % m;
+	int rigaS = ((r +1) % m);
+	int colP = (c + n - 1) % n;
+	int colS = ((c +1) % n);
+	char ris = M[r][c];
+
+	if(i >= n * m) return false;
+
+	// verifico le varie situazioni
+	switch (ris) {
+		case 'X': return true;
+		case 'T': return false;
+		case 'A': return tesoroTrovato(M, rigaP, c, i + 1);
+		case 'B': return tesoroTrovato(M, rigaS, c, i + 1);
+		case 'S': return tesoroTrovato(M, r, colP, i + 1);
+		case 'D': return tesoroTrovato(M, r, colS, i + 1);
+		case '?': return tesoroTrovato(M, r, colS, i + 1) || tesoroTrovato(M, r, colP, i + 1) ||
+			tesoroTrovato(M, rigaS, c, i + 1) || tesoroTrovato(M, rigaP, c, i + 1);
+		default: return false;
+	}
+}
+char[][] M = {{'B', 'D', 'A'}, {'?', 'S', 'S'}};
+//parto da M[0][0]
+System.out.println(tesoroTrovato(M, 0, 0, 0));

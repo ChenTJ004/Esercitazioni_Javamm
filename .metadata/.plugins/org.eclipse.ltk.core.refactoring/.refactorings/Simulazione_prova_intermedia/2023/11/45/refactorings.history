@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Simulazione_prova_intermedia/src/javamm/es2.javamm&apos; to &apos;es9_2.javamm&apos;" description="Rename resource &apos;es2.javamm&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/javamm/es2.javamm" name="es9_2.javamm" stamp="1699350200675" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Simulazione_prova_intermedia/src/javamm/es1.javamm&apos; to &apos;es9_1.javamm&apos;" description="Rename resource &apos;es1.javamm&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/javamm/es1.javamm" name="es9_1.javamm" stamp="1699350208018" updateReferences="true"/>
+</session>

@@ -1,0 +1,16 @@
+int[] visitaSerpentina(int[][] M) {
+	int m = M.length;
+	int n = M[0].length;
+
+	int[] arrayVisitaSerpentina = new int[n];
+
+	for (int i = 0; i < n; i++) {
+		if (i < m) {
+			arrayVisitaSerpentina[i] = M[i][i];
+		} else {
+			arrayVisitaSerpentina[i] = M[Math.abs(i + (m - i))][i];
+		}
+	}
+
+	return null;
+}

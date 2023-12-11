@@ -1,0 +1,47 @@
+//Per debug
+//import org.junit.Assert;
+//import org.junit.Test;
+//
+//import javamm.EspandiArray;
+int maxRipetizioni(int[] V) {
+	int max = 0;
+	for (int i = 0; i < V.length; i++) {
+		if (V[i] > max)
+			max = V[i];
+	}
+	return max;
+}
+
+int[][] espandiArray(int[] V) {
+	int numRighe = maxRipetizioni(V);
+	int numColonne = V.length;
+
+	int[][] M = new int[numRighe][numColonne];
+	for (int i = 0; i < numColonne; i++) {
+		for (int j = 0; j < V[i]; j++) {
+				M[j][i] = V[i];
+		}
+	}
+	return M;
+}
+
+int[][] espandiArrayExtra(int[] V) {
+	int numRighe = maxRipetizioni(V);
+	int numColonne = V.length;
+
+	int[][] M = new int[numRighe][numColonne];
+	for (int i = 0; i < numRighe; i++) {
+		for (int j = 0; j < numColonne; j++) {
+			if (i <= V[j] - 1)
+				M[i][j] = V[j];
+			else
+				M[i][j] = 0;
+		}
+	}
+	return M;
+}
+
+//Per debug
+//int[] V = {1, 5, 1};
+//int[][] M = {{1, 5, 1}, {0, 5, 0}, {0, 5, 0}, {0, 5, 0}, {0, 5, 0}};
+//Assert.assertEquals(EspandiArray.espandiArray(V), M);

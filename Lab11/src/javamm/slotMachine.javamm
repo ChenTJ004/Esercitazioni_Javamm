@@ -1,0 +1,31 @@
+int[][] ruota(int[][] S, int[] r) {
+	int m = S.length;
+	int n = S[0].length;
+	int[][] copiaS = new int[m][n];
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			copiaS[j][i] = S[(j + r[i]) % m][i];
+		}
+	}
+	return copiaS;
+}
+
+boolean controllaVincita(int[][] S) {
+	int m = S.length;
+	int n = S[0].length;
+	int rigaCentrale = (m - 1) / 2;
+	for (int i = 0; i < n; i++) {
+		if (S[rigaCentrale][i] != 1) {
+			return false;
+		}
+	}
+	return true;
+}
+
+boolean partitaCompleta(int[][] S, int[] r, int k) {
+	if (k == 0) {
+		return controllaVincita(S);
+	} else {
+		return partitaCompleta(ruota(S, r), r, k - 1);
+	}
+}

@@ -1,0 +1,29 @@
+int numCifre(int n) {
+	int i = 1;
+	while (n>=10){
+		n/=10;
+		i++;
+	}
+	return i;
+}
+
+boolean bilanciato(int n) {
+	int k = numCifre(n);
+	int posizione;
+	int a = (n/Math.pow(10,k)).intValue()%10;
+	int b =(n/Math.pow(10,k-k)).intValue()%10;
+	
+	int sommaRiferimento =(n/Math.pow(10,k)).intValue()%10 + (n/Math.pow(10,k-k)).intValue()%10;
+	int somma;
+	for(int i=0; i<k/2; i++){
+		posizione = k-i;
+		somma = (n/Math.pow(10,posizione)).intValue()%10 + (n/Math.pow(10,k - posizione)).intValue()%10;
+		if(somma != sommaRiferimento){
+			return false;
+		}
+	}
+	return true;
+}
+
+int n=31332353;
+System.out.println(bilanciato(n));

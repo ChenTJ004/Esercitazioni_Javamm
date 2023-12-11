@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Laboratorio/src/javamm/HelloWorld.javamm&apos; to &apos;cercaMassimo_matrice.javamm&apos;" description="Rename resource &apos;HelloWorld.javamm&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/javamm/HelloWorld.javamm" name="cercaMassimo_matrice.javamm" stamp="1698316138649" updateReferences="true"/>
+</session>

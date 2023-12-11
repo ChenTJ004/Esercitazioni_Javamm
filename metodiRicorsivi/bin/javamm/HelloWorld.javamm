@@ -1,0 +1,6 @@
+void sayHelloWorld(String m) {
+	System.out.println(m);
+}
+
+// this is the main program
+sayHelloWorld("Hello world!");

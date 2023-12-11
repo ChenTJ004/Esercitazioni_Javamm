@@ -1,0 +1,14 @@
+int numMax(int[] a) {
+	int max = 0;
+	for (int i = 0; i < a.length; i++) {
+		if (a[i] > max) {
+			max = a[i];
+		}
+	}
+	return max;
+}
+
+int [] occorrenzeCompresso(int [] a) {
+	int[] occorrenze = new int [numMax(a)];
+	return null;
+}

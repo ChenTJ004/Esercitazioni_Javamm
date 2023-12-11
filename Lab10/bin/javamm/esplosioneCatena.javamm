@@ -1,0 +1,94 @@
+//boolean ancoraUno(int[][]T, int r, int c){
+//	boolean uno;
+//	T[r][c]=0;
+//	
+//	int up;
+//	if(r==0){
+//		up=0;
+//	}else{
+//		up=r-1;
+//	}
+//	
+//	int down;
+//	if(r==T.length-1){
+//		down=r;
+//	}else{
+//		down=r+1;
+//	}
+//	
+//	int left;
+//	if(c==0){
+//		left=c;
+//	}else{
+//		left=c-1;
+//	}
+//	
+//	int right;
+//	if(c==T[0].length-1){
+//		right=c;
+//	}else{
+//		right=c+1;
+//	}
+//	for(int i=up;i<down;i++){
+//		for(int j=left;j<right;j++){	
+//			if(T[i][j]==1){
+//				return true;
+//			}
+//		}
+//	}
+//	return false;
+//}	
+int[][] esplodiMatrice(int[][] T, int r, int c) {
+	if (T[r][c] == 0) {
+		return T;
+	}
+	T[r][c] = 0;
+
+	int up;
+	if (r == 0) {
+		up = 0;
+	} else {
+		up = r - 1;
+	}
+
+	int down;
+	if (r == T.length - 1) {
+		down = r;
+	} else {
+		down = r + 1;
+	}
+
+	int left;
+	if (c == 0) {
+		left = c;
+	} else {
+		left = c - 1;
+	}
+
+	int right;
+	if (c == T[0].length - 1) {
+		right = c;
+	} else {
+		right = c + 1;
+	}
+	for (int i = down; i >= up; i--) {
+		for (int j = right; j >= left; j--) {
+			if (T[i][j] == 1) {
+				return esplodiMatrice(T, i, j);
+			}
+		}
+	}
+	return T;
+}
+
+int x = 0, y = 0;
+int[][] input = new int[][] {{1, 0, 0, 0}, {1, 1, 0, 0}, {1, 1, 1, 0}, {1, 1, 1, 1}};
+
+int[][] a = esplodiMatrice(input, x, y);
+
+for (int i = 0; i < a.length; i++) {
+	for (int j = 0; j < a[0].length; j++) {
+		System.out.print(a[i][j] + " ");
+	}
+	System.out.println();
+}

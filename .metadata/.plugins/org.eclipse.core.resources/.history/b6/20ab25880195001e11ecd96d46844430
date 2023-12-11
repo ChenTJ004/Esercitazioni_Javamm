@@ -1,0 +1,14 @@
+boolean anelloBilanciato(int[][] T, int k) {
+	int m = T.length;
+   	int centro = m/2;
+   	int somma = 0;
+   	int riga;
+   	int colonna;
+   	while(true){
+   		riga = centro - k;
+   		colonna = centro -k;
+   		somma = T[centro-k][centro-k] + T[centro+k][centro+k];
+   	}
+   	
+	return false;
+}

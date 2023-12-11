@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: prova
+Bundle-ManifestVersion: 2
+Bundle-Name: prova
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: prova; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: javamm.runtime
+Import-Package: org.apache.log4j,
+ org.apache.commons.logging
+Bundle-RequiredExecutionEnvironment: JavaSE-11
