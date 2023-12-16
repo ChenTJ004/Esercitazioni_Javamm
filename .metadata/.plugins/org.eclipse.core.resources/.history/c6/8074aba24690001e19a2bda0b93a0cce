@@ -1,4 +1,0 @@
-int[][] compattaMatrice(int[][] A) {
-
-	return null;
-}

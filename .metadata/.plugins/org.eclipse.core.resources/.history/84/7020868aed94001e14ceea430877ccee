@@ -1,4 +1,0 @@
-int[] visitaSerpentina(int[][] M) {
-	int posizioneAttuale = M[0][0];
-	return null;
-}

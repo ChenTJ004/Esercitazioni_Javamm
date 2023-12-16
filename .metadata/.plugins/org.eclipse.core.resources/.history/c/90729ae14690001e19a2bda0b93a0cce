@@ -1,8 +1,0 @@
-int contaElementi(int[][] A){
-	return 0;
-}
-
-int[][] compattaMatrice(int[][] A) {
-	
-	return null;
-}

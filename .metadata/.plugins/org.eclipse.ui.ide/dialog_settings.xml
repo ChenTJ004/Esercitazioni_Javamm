@@ -17,6 +17,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\enzoc\Downloads\Lab 20 - Esercizi\GeneraMatriceDaArray"/>
+			<item value="C:\Users\enzoc\Downloads\Lab 20 - Esercizi\TrovaParola"/>
 			<item value="C:\Users\enzoc\Downloads\Lab 19 - Esercizi\AzzeraNonUnici"/>
 			<item value="C:\Users\enzoc\Downloads\Lab 19 - Esercizi\Anelli"/>
 			<item value="C:\Users\enzoc\Downloads\Lab 18 - Esercizi\VisitaSerpentinaMatriceProject"/>
@@ -35,7 +37,6 @@
 			<item value="C:\Users\enzoc\Downloads\Lab 12 - Esercizi\SecondaPI.ProgettiDaImportare"/>
 			<item value="C:\Users\enzoc\Downloads\Lab 13 - Esercizi\AA21_22_PrimaPI_student"/>
 			<item value="C:\Users\enzoc\Desktop\UNIFI\PROGRAMMAZIONE\workspace_JAVAMM\Lab11"/>
-			<item value="C:\Users\enzoc\Downloads\Lab 06 -  Istruzione while\firstlastdigitsum\FirstLastDigitSum.student"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>

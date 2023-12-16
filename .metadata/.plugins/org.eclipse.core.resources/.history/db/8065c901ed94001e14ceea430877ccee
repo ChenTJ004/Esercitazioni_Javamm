@@ -1,4 +1,0 @@
-int[] visitaSerpentina(int[][] M) {
-
-	return null;
-}
