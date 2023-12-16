@@ -1,0 +1,32 @@
+int[][] generaSingolaMatrice(int n, int start){
+	int[][] M = new int[n][n];
+	for(int i=0; i<n; i++){
+		for(int j=0; j<n; j++){
+			M[i][j] = start++;
+		}
+	}
+	return M;
+}
+
+int lunghezzaMatrice(int[] arr){
+	int somma=0;
+	for(int i=0; i<arr.length; i++){
+		somma+=arr[i];
+	}
+	return somma;
+}
+
+// Consegna obbligatoria (soluzione iterativa)
+int[][] generaMatriceDaArray(int[] arr) {
+	int numColonne = lunghezzaMatrice(arr);
+	for(int i=0; i<arr.length ; i++){
+		arr[i]
+	}
+	return (null);
+}
+
+// Consegna aggiuntiva (facoltativa - soluzione ricorsiva)
+int[][] generaMatriceDaArrayRicorsivo(int[] arr) {
+
+	return (null);
+}

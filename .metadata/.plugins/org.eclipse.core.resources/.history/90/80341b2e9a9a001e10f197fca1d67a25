@@ -1,0 +1,50 @@
+int colonneMatrice(int[] arr) {
+	int somma = 0;
+	for (int i = 0; i < arr.length; i++) {
+		somma += arr[i];
+	}
+	return somma;
+}
+
+int righeMatrice(int[] arr) {
+	int max = 0;
+	for (int i = 0; i < arr.length; i++) {
+		if(arr[i] > max) max = arr[i];
+	}
+	return max;
+}
+
+// Consegna obbligatoria (soluzione iterativa)
+int[][] generaMatriceDaArray(int[] arr) {
+	int m = righeMatrice(arr);
+	int n = colonneMatrice(arr);
+	int[][] M = new int[m][n];
+	int num = 1;
+	int inizioSottomatrice = 0;
+	for (int i = 0; i < arr.length; i++) { // arr.length e' il numero di matrici piccole che andro'
+										// a aggiungere nella matrice grande.
+		for (int j = 0; j < arr[i]; j++) {
+			for (int k = 0; k < arr[i]; k++) {
+				M[j][inizioSottomatrice + k] = num++;
+			}
+		}
+		inizioSottomatrice += arr[i];
+	}
+	return M;
+}
+
+int[][] generaMatriceDaArrayRicorsivo(int[] arr, int i) {
+	if(i==arr.length-1){
+		return null;
+	}
+	return (null);
+}
+
+// Consegna aggiuntiva (facoltativa - soluzione ricorsiva)
+int[][] generaMatriceDaArrayRicorsivo(int[] arr) {
+	
+	return (null);
+}
+
+int[] arr = {3,2,1};
+generaMatriceDaArray(arr);

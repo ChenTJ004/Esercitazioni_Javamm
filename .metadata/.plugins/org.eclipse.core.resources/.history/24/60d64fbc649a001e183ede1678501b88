@@ -1,0 +1,11 @@
+package javamm;
+
+@SuppressWarnings("all")
+public class TrovaParola {
+  public static boolean trovaParolaDiagonale(char[][] M, char[] p) {
+    return false;
+  }
+  
+  public static void main(String[] args) {
+  }
+}

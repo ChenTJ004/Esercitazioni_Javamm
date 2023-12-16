@@ -1,0 +1,15 @@
+package javamm;
+
+@SuppressWarnings("all")
+public class GeneraMatriceDaArray {
+  public static int[][] generaMatriceDaArray(int[] arr) {
+    return null;
+  }
+  
+  public static int[][] generaMatriceDaArrayRicorsivo(int[] arr) {
+    return null;
+  }
+  
+  public static void main(String[] args) {
+  }
+}

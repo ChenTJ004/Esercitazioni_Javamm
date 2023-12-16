@@ -1,0 +1,55 @@
+boolean trovaParolaDiagonale(char[][] M, char[] p) {
+	int m = M.length;
+	int n = M[0].length;
+	int count = 0;
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			if (M[i][j] == p[0]) {
+				if (cercaDiag1(M, p, i, j) == p.length || cercaDiag2(M, p, i, j) == p.length || cercaDiag3(M, p, i, j) == p.length || cercaDiag4(M, p, i, j) == p.length) {
+					return true;
+				}
+			}
+		}
+	}
+	return false;
+}
+
+int cercaDiag1(char[][] M, char[] p, int i, int j) {
+	int count = 0;
+	int m = M.length;
+	int n = M[0].length;
+	for (int k = 0; k < p.length; k++) {
+		if ((i + k) < m && (j + k) < n && M[i + k][j + k] == p[k])
+			count++;
+	}
+	return count;
+}
+
+int cercaDiag2(char[][] M, char[] p, int i, int j) {
+	int count = 0;
+	int n = M[0].length;
+	for (int k = 0; k < p.length; k++) {
+		if ((i - k) >= 0 && (j + k) < n && M[i - k][j + k] == p[k])
+			count++;
+	}
+	return count;
+}
+
+int cercaDiag3(char[][] M, char[] p, int i, int j) {
+	int count = 0;
+	for (int k = 0; k < p.length; k++) {
+		if ((i - k) >= 0 && (j - k) >= 0 && M[i - k][j - k] == p[k])
+			count++;
+	}
+	return count;
+}
+
+int cercaDiag4(char[][] M, char[] p, int i, int j) {
+	int count = 0;
+	int n = M[0].length;
+	for (int k = 0; k < p.length; k++) {
+		if ((i + k) >= 0 && (j + k) < n && M[i - k][j + k] == p[k])
+			count++;
+	}
+	return count;
+}

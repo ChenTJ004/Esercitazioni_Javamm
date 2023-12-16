@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="javamm.ui.JavammLaunchConfigurationType">
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_REFRESH_RECURSIVE" value="true"/>
+    <stringAttribute key="org.eclipse.debug.core.ATTR_REFRESH_SCOPE" value="${workspace}"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="javamm.TrovaParola"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Lab20_TrovaParola"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.STOP_IN_MAIN" value="false"/>
+</launchConfiguration>

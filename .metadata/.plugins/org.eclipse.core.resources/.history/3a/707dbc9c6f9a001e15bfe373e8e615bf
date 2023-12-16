@@ -1,0 +1,35 @@
+boolean trovaParolaDiagonale(char[][] M, char[] p) {
+	int m = M.length;
+	int n = M[0].length;
+	int count = 0;
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			if (M[i][j] == p[0]) {
+				for (int k = 0; k < p.length; k++) {
+					if ((i + k) < m && (j + k) < n && M[i + k][j + k] == p[k])
+						count++;
+				}
+				if (count == p.length) {
+					return true;
+				}
+				count = 0;
+			}
+		}
+	}
+	return false;
+}
+
+boolean cercaDiag1(char[][] M, char[] p, int i, int j) {
+	int count = 0;
+	int m = M.length;
+	int n = M[0].length;
+	for (int k = 0; k < p.length; k++) {
+		if ((i + k) < m && (j + k) < n && M[i + k][j + k] == p[k])
+			count++;
+	}
+	if (count == p.length) {
+		return true;
+	}
+	count = 0;
+	return false;
+}
