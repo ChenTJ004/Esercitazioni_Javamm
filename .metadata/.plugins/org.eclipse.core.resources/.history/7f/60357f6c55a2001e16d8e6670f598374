@@ -1,0 +1,5 @@
+
+char[] cercaParolaNascosta (char[][] testo) {
+
+	return null;
+}

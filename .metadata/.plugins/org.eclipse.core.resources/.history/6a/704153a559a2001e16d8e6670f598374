@@ -1,0 +1,52 @@
+char cercaCarattereNascosto(char[] riga) {
+	int count = 0;
+	int max = 0;
+	char carattere = ' ';
+	for (int i = 0; i < riga.length; i++) {
+		for (int j = i; j < riga.length; j++) {
+			if (riga[i] == riga[j]) {
+				count++;
+			}
+		}
+		if (count >= 2 && count > max) {
+			max = count;
+			carattere = riga[i];
+		}
+		count=0;
+	}
+	return carattere;
+}
+
+int lunghezzaParola(char[][] testo) {
+	int lunghezza = 0;
+	for (int i = 0; i < testo.length; i++) {
+		if (cercaCarattereNascosto(testo[i]) != ' ') {
+			lunghezza++;
+		}
+	}
+	return lunghezza;
+}
+
+char[] cercaParolaNascosta(char[][] testo) {
+	int index = 0;
+	int i = 0;
+	char[] parolaNascosta = new char[lunghezzaParola(testo)];
+	char carattere;
+	while (index < parolaNascosta.length) {
+		carattere = cercaCarattereNascosto(testo[i++]);
+		if (carattere != ' ') {
+			parolaNascosta[index++] = carattere;
+		}
+	}
+	if (index == 0) {
+		return {' '};
+	} else {
+		return parolaNascosta;
+	}
+}
+
+char[][] testo = {{'A', 'B', 'C', 'D', 'E'}, {'A', 'B', 'C', 'D', 'E'}, {'A', 'B', 'C', 'D', 'E'},
+	{'A', 'B', 'C', 'D', 'E'}, {'A', 'B', 'C', 'D', 'E'}, {'A', 'B', 'C', 'D', 'E'}};
+char[] parolaNascosta = {' '};
+
+cercaParolaNascosta(testo);

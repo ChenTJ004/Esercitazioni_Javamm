@@ -1,0 +1,12 @@
+// Estensione opzionale.
+int rimuoviFibonacciEsteso (int numero) {
+	
+	return 0;
+}
+
+
+// Metodo obbligatorio.
+int rimuoviFibonacci (int numero) {
+	
+	return 0;
+}

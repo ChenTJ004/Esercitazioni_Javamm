@@ -1,0 +1,41 @@
+char cercaCarattereNascosto(char[] riga) {
+	int count = 0;
+	int max = 0;
+	char carattere = ' ';
+	for (int i = 0; i < riga.length; i++) {
+		for (int j = i; j < riga.length; j++) {
+			if(riga[i]==riga[j]){
+				count++;
+			}
+		}
+		if(count>=2&&count>max){
+			max=count;
+			carattere = riga[i];
+		}
+	}
+	return carattere;
+}
+
+int lunghezzaParola(char[][] testo){
+	int righe = testo.length;
+	int lunghezza = 0;
+	for(int i=0; i<righe; i++){
+		if(cercaCarattereNascosto(testo[i])!=' '){
+			lunghezza++;
+		}
+	}
+	return lunghezza;
+}
+
+char[] cercaParolaNascosta(char[][] testo) {
+	int righe = testo.length;
+	int lunghezza = 0;
+	for(int i=0; i<righe; i++){
+		if(cercaCarattereNascosto(testo[i])!=' '){
+			lunghezza++;
+		}
+	}
+	char[] parolaNascosta = new char[lunghezza];
+	
+	return null;
+}

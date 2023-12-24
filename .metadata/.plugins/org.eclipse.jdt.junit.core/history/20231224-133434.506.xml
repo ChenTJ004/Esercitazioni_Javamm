@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ParolaNascostaTest" project="20230124_SimPI_3.student" tests="16" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="tests.ParolaNascostaTest" incomplete="true">
+    <testcase name="test10" classname="tests.ParolaNascostaTest" time="0.013"/>
+    <testcase name="test11" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test12" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test13" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test14" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test15" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test16" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test1" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test2" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test3" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test4" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test5" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test6" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test7" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test8" classname="tests.ParolaNascostaTest" incomplete="true"/>
+    <testcase name="test9" classname="tests.ParolaNascostaTest" incomplete="true"/>
+  </testsuite>
+</testrun>

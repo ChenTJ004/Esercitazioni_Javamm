@@ -1,0 +1,11 @@
+package javamm;
+
+@SuppressWarnings("all")
+public class ParolaNascosta {
+  public static char[] cercaParolaNascosta(char[][] testo) {
+    return null;
+  }
+  
+  public static void main(String[] args) {
+  }
+}
